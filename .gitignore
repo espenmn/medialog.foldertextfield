@@ -1,0 +1,7 @@
+
+medialog.foldertextfield.egg-info/
+*.pyc
+
+medialog/foldertextfield/.DS_Store
+
+.DS_Store
