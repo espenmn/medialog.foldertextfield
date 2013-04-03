@@ -1,6 +1,7 @@
 
 medialog.foldertextfield.egg-info/
 *.pyc
+*.pyo
 
 medialog/foldertextfield/.DS_Store
 
