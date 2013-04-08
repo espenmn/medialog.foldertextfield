@@ -2,9 +2,7 @@ from zope.interface import implements, Interface
 from Products.Five.utilities.marker import mark
 
 from Products.Five import BrowserView
-
-
-
+ 
 class IFolderTextView(Interface):
     """
     Folder view interface
