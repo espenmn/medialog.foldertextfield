@@ -1,6 +1,6 @@
 from zope.interface import implements, alsoProvides, noLongerProvides
 from zope.interface import implements, Interface
-from Products.Five.utilities.marker import mark
+#from Products.Five.utilities.marker import mark
 from ..interfaces import IFolderTextObject
 
 
