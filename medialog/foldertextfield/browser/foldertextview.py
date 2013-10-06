@@ -1,5 +1,8 @@
+from zope.interface import implements, alsoProvides, noLongerProvides
 from zope.interface import implements, Interface
 from Products.Five.utilities.marker import mark
+from ..interfaces import IFolderTextObject
+
 
 from Products.Five import BrowserView
  
@@ -48,5 +51,15 @@ class FolderTextEnable(BrowserView):
         enable textfield
         """
         
-        mark(self, IFolderTextEnable)
+        #mark(self, IFolderTextEnable)
         
+        
+        if not IFolderTextObject.providedBy(self.context):
+            alsoProvides(self.context, IFolderTextObject)
+            self.context.reindexObject(idxs=['object_provides'])
+            self.request.response.redirect(self.context.absolute_url())
+            
+        else:  
+            noLongerProvides(self.context, IFolderTextObject)
+            self.context.reindexObject(idxs=['object_provides'])
+            self.request.response.redirect(self.context.absolute_url())

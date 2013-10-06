@@ -24,7 +24,7 @@ class _TextExtensionField(ExtensionField, TextField):
 
 class FolderTextExtender(object):
     """Adapter that adds a body text field."""
-    adapts(IATFolder)
+    adapts(IFolderTextObject)
     implements(ISchemaExtender, IBrowserLayerAwareExtender)
     layer = IFolderTextObject
     _fields = [

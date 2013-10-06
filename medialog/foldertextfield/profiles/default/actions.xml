@@ -2,7 +2,7 @@
 <object name="portal_actions" meta_type="Plone Actions Tool">
     <action-provider name="portal_actions">
 
-        <action title="Enable Textfield" action_id="enable_textfield" category="folder_buttons"
+        <action title="Toggle Textfield" action_id="enable_textfield" category="object_buttons"
             url_expr="string:${object_url}/@@enable_foldertext" visible="True">
             <permission>medialog.foldertextfield: Enable textfielc</permission>
         </action>
