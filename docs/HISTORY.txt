@@ -1,4 +1,10 @@
 Changelog
 =========
 
-See README.txt
+0.2
+---
+- Added condition for text-field.
+
+0.1
+---
+First version

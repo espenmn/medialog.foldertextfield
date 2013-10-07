@@ -1,12 +1,6 @@
 ------------
-Introduction
+Description
 ------------
 
-Under development
-
-Keywords: plone zope newsitem view
-Platform: UNKNOWN
-Classifier: Framework :: Plone
-Classifier: Programming Language :: Python
-Classifier: Topic :: Software Development :: Libraries :: Python Modules
-
+- Adds a text field to folder that you can enable with an action.
+- Adds a view for folders ( @@foldertext_view )
