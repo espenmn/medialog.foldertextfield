@@ -6,3 +6,6 @@ medialog.foldertextfield.egg-info/
 medialog/foldertextfield/.DS_Store
 
 .DS_Store
+
+build/
+*.gz

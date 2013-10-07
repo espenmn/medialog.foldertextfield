@@ -8,11 +8,10 @@
   <!-- -*- extra stuff goes here -*- -->
 
   <browser:page
-      for="Products.ATContentTypes.interface.IATFolder"
+      for="medialog.foldertextfield.interfaces.IFolderTextObject"
       name="foldertext_view"
       class=".foldertextview.FolderTextView"
       template="foldertextview.pt"
-      allowed_interface=".foldertextview.IFolderTextView"
       permission="zope.Public"
       layer="medialog.foldertextfield.interfaces.IFolderTextObject"
       />

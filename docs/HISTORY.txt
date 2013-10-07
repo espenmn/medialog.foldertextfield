@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.3
+---
+- Added the view to the right interface.
+
 0.2
 ---
 - Added condition for text-field.
