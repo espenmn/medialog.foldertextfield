@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.4
+---
+- Set view to default when field is turned off
+- Renamed actions
+- Fixed some typos
+
 0.3
 ---
 - Added the view to the right interface.
@@ -12,3 +18,5 @@ Changelog
 0.1
 ---
 First version
+
+

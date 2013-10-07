@@ -18,7 +18,7 @@
 
    <browser:page
       for="Products.ATContentTypes.interface.IATFolder"
-      name="enable_foldertext"
+      name="toggle_foldertext"
       class=".foldertextview.FolderTextEnable"
       allowed_interface=".foldertextview.IFolderTextEnable"
       permission="zope.Public"

@@ -33,22 +33,22 @@ class FolderTextView(BrowserView):
 
 class IFolderTextEnable(Interface):
     """
-    Enable Folder textfield interface
+    Toggle Folder textfield interface
     """
 
     def __call__():
-        """ enable text field method"""
+        """ toggle text field method"""
         
 
 class FolderTextEnable(BrowserView):
     """
-    Enable Folder text field
+    Toggle Folder text field
     """
     implements(IFolderTextEnable)
     
     def __call__(self):
         """
-        enable textfield
+        toggle textfield
         """
         
         #mark(self, IFolderTextEnable)
@@ -57,9 +57,12 @@ class FolderTextEnable(BrowserView):
         if not IFolderTextObject.providedBy(self.context):
             alsoProvides(self.context, IFolderTextObject)
             self.context.reindexObject(idxs=['object_provides'])
+            #self.context.reindexObject(idxs=['text'])
             self.request.response.redirect(self.context.absolute_url())
             
         else:  
             noLongerProvides(self.context, IFolderTextObject)
             self.context.reindexObject(idxs=['object_provides'])
+            if self.context.getLayout() == 'foldertext_view' :
+            	self.context.setLayout('folder_listing')
             self.request.response.redirect(self.context.absolute_url())
